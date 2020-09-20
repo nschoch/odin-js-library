@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+<body>
+      <main class="main">
+          <header class="header">
+              <h1 class=main-title>Library</h1>
+              <div class="button-container">
+                  <button class="button--new">Add Book</button>
+              </div>
+          </header>
+  
+          
+  
+          <div class="library-container">
+              <!-- Consider a grid of book "cards" here -->
+              <div class="library__headings">
+                  <h2 class="library__heading library__heading--title">Title</h2>
+                  <h2 class="library__heading library__heading--author">Author</h2>
+                  <h2 class="library__heading library__heading--pages">Pages</h2>
+                  <h2 class="library__heading library__heading--read">Already Read?</h2>
+              </div>
+  
+              <!-- <div class="book" data-id="0">
+                  <div class="book__property book__title">The Lord of the Rings</div>
+                  <div class="book__property book__author">J.R.R. Tolkien</div>
+                  <div class="book__property book__pages">423</div>
+                  <div class="book__property book__read book__read--yes">
+                          <button class="book__read-status book__read-status--yes book__read-status--selected">Yes</button><button class="book__read-status book__read-status--no">No</button>                 
+                  </div>
+                  <span class="book__delete">&times;</span>
+              </div> -->
+  
+          </div>
+          <div class="modal">
+              <div class="form-container">
+                  <div class="form__header">
+                      <h2 class="form__title">New Book</h2>
+                      <span class="form__close">&times;</span>
+                  </div>
+                  <form class="form">
+                      <ul>
+                          <li class="form__item">
+                              <label class="form__label" for="title">Title</label>
+                              <input required placeholder="Enter the book title" class="form__input form__input--title" type="text" id="title" name="title">
+                          </li>
+                          <li class="form__item">
+                              <label class="form__label" for="author">Author</label>
+                              <input required placeholder="Enter the author" class="form__input form__input--author" type="text" id="author" name="author">
+                          </li>
+                          <li class="form__item">
+                              <label class="form__label" for="pages">Number of pages</label>
+                              <input required placeholder="Enter the number of pages" class="form__input form__input--pages" type="number" id="pages" name="pages">
+                          </li>
+                          <fieldset class="form__radio-fieldset">
+                              <legend class="form__label form__label--radio">Have you read this book?</legend>
+                              <ul class=form__radio--list>
+                                  <li class="form__radio--list-item">
+                                      <input type="radio" class="form__radio form__radio--read" id="read" name="read" value="read" required>
+                                      <label class="form__label" for="read">Yes</label>
+                                  </li>
+                                  <li class="form__radio--list-item">
+                                      <input type="radio" id="not-read" class="form__radio form__radio--notRead" name="read" value="notRead">
+                                      <label class="form__label" for="not-read">No</label>
+                                  </li>
+                              </ul>
+                          </fieldset>
+                          <button class="form__submit" type="submit">Submit</button>
+                      </ul>               
+                  </form>
+              </div>
+          </div>
+      </main>
+    </body>
+  <script type="text/javascript" src="main.js"></script>
+</html>
